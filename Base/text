@@ -1,0 +1,19 @@
+# 全局变量
+globals()["phoneCode"] = responseDict['msg']
+
+# yaml 新版本
+with open(r'..\Libraries_Self\Libraries_Yaml\token.yaml', mode='w', encoding='utf-8') as file:
+    YAML().dump({'token': responseDict['data']['token']}, file)
+
+# 整除
+for i in range(20):
+    x = i+1
+    if x % 3 == 0:
+        print('z')
+    else:
+        print('n')
+
+# 判断空值
+    if responseDict['data'] != []:
+    优化为：
+    if responseDict['data']:
